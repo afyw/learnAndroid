@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_test1"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/tv_test1"
+        android:textColor="#ff0033"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:drawablePadding="5dp"
+        android:textColor="#ff0033"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_test1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_test1"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        />
+
+    //修改java文件达到添加下划线目的(html方法）
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_test1"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+//跑马灯
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="afy_HelloWorld_afy_HelloWorld"
+        android:textColor="#000000"
+        android:textSize="24sp"
+       android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+
+</LinearLayout>
