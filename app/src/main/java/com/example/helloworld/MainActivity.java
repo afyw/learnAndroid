@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mBtnTextView;
+    private Button mBtnButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,TextViewActivity.class
                 );
+                startActivity(intent);
+            }
+        });
+
+        mBtnButton = (Button)findViewById(R.id.btn_button);
+        mBtnButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到Button演示界面
+                Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
                 startActivity(intent);
             }
         });
